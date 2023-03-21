@@ -1,0 +1,410 @@
+[
+{
+  "model": "webapp.status",
+  "pk": 1,
+  "fields": {
+    "name": "New"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 2,
+  "fields": {
+    "name": "In progress"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 3,
+  "fields": {
+    "name": "Done"
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 1,
+  "fields": {
+    "summary": "Домашнее задание",
+    "description": "Пересмотреть урок номер 57 и выполнить домашнее задание до дедлайна",
+    "status": 1,
+    "project": 3,
+    "created_at": "2023-03-03T04:58:22.895Z",
+    "updated_at": "2023-03-20T14:48:08.536Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 2,
+  "fields": {
+    "summary": "Всплывающее окно",
+    "description": "Всплывающее окно не пропадает, пока не измениться дата",
+    "status": 2,
+    "project": 3,
+    "created_at": "2023-03-03T05:01:49.798Z",
+    "updated_at": "2023-03-03T05:01:49.798Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 3,
+  "fields": {
+    "summary": "Перевод текста и шрифты",
+    "description": "Не переведены на русский заголовки и описание. Не подобрены правильные шрифты и их размеры",
+    "status": 3,
+    "project": 3,
+    "created_at": "2023-03-03T05:04:38.763Z",
+    "updated_at": "2023-03-03T05:04:38.763Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 4,
+  "fields": {
+    "summary": "Ошибка подключения",
+    "description": "Возникает ошибка подключения на игровой сервер",
+    "status": 1,
+    "project": 3,
+    "created_at": "2023-03-03T05:06:47.154Z",
+    "updated_at": "2023-03-03T05:06:47.154Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 5,
+  "fields": {
+    "summary": "Оплата покупок",
+    "description": "Необновляется курс тенге к доллару во время оплаты покупок",
+    "status": 2,
+    "project": 3,
+    "created_at": "2023-03-03T05:09:26.643Z",
+    "updated_at": "2023-03-10T11:11:02.046Z",
+    "is_deleted": true,
+    "deleted_at": "2023-03-10T11:11:02.046Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 8,
+  "fields": {
+    "summary": "Какой то bug",
+    "description": "Сделать что-то там",
+    "status": 2,
+    "project": 3,
+    "created_at": "2023-02-02T23:29:55Z",
+    "updated_at": "2023-02-04T23:26:11Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 9,
+  "fields": {
+    "summary": "Какое то улучшение",
+    "description": "Какое то улучшение",
+    "status": 2,
+    "project": 4,
+    "created_at": "2023-03-01T23:35:05Z",
+    "updated_at": "2023-03-10T11:05:18.338Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 10,
+  "fields": {
+    "summary": "Веб страница",
+    "description": "Что-то там с веб страницой",
+    "status": 1,
+    "project": 3,
+    "created_at": "2023-03-06T23:37:30Z",
+    "updated_at": "2023-03-06T23:37:32Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 11,
+  "fields": {
+    "summary": "Стили",
+    "description": "Реализовать стили для проекта",
+    "status": 3,
+    "project": 5,
+    "created_at": "2023-02-23T23:39:46Z",
+    "updated_at": "2023-03-10T11:05:05.659Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 12,
+  "fields": {
+    "summary": "Проект Джанго",
+    "description": "Реализовть проект джанго",
+    "status": 3,
+    "project": 3,
+    "created_at": "2023-02-01T23:43:34Z",
+    "updated_at": "2023-03-10T11:04:29.564Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 13,
+  "fields": {
+    "summary": "Валидация",
+    "description": "Не работает валидация на проекте",
+    "status": 2,
+    "project": 5,
+    "created_at": "2023-03-02T23:45:51Z",
+    "updated_at": "2023-03-10T11:04:13.546Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 14,
+  "fields": {
+    "summary": "Улучшить адаптивность",
+    "description": "Улучшить адаптивность",
+    "status": 1,
+    "project": 3,
+    "created_at": "2023-03-05T23:46:38Z",
+    "updated_at": "2023-03-10T11:04:03.034Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 15,
+  "fields": {
+    "summary": "Читаемость",
+    "description": "Добавить читаемость на всех консолях",
+    "status": 3,
+    "project": 5,
+    "created_at": "2023-02-01T23:47:58Z",
+    "updated_at": "2023-03-10T11:03:57.526Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 16,
+  "fields": {
+    "summary": "Зависает игра",
+    "description": "При подключении больше 5 игроков, играет начинает зависать",
+    "status": 1,
+    "project": 4,
+    "created_at": "2023-03-06T23:51:57Z",
+    "updated_at": "2023-03-10T11:40:54.159Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 17,
+  "fields": {
+    "summary": "Улучшить игрока",
+    "description": "Улучшить плавность движения игрока",
+    "status": 1,
+    "project": 4,
+    "created_at": "2023-02-17T23:55:43Z",
+    "updated_at": "2023-03-10T11:03:36.099Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 18,
+  "fields": {
+    "summary": "Glf;ds'",
+    "description": "Gsd'l",
+    "status": 1,
+    "project": 6,
+    "created_at": "2023-03-20T16:51:18.761Z",
+    "updated_at": "2023-03-21T10:28:04.124Z",
+    "is_deleted": true,
+    "deleted_at": "2023-03-21T10:28:04.124Z",
+    "type": []
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 19,
+  "fields": {
+    "summary": "Jl;kfdl;",
+    "description": "Jdf'lg'",
+    "status": 1,
+    "project": 6,
+    "created_at": "2023-03-20T18:29:33.502Z",
+    "updated_at": "2023-03-21T10:27:58.565Z",
+    "is_deleted": true,
+    "deleted_at": "2023-03-21T10:27:58.565Z",
+    "type": []
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 20,
+  "fields": {
+    "summary": "Gldsjklf",
+    "description": "Gdkf;ldsks",
+    "status": 1,
+    "project": 3,
+    "created_at": "2023-03-21T09:41:35.827Z",
+    "updated_at": "2023-03-21T10:22:14.403Z",
+    "is_deleted": true,
+    "deleted_at": "2023-03-21T10:22:14.403Z",
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 1,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 2,
+  "fields": {
+    "name": "Enhancement"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 3,
+  "fields": {
+    "name": "Task"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 3,
+  "fields": {
+    "started_at": "2023-03-01",
+    "finished_at": null,
+    "name": "Web page",
+    "description": "Веб страницы",
+    "is_deleted": false,
+    "deleted_at": null,
+    "user": [
+      3,
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 4,
+  "fields": {
+    "started_at": "2023-03-01",
+    "finished_at": "2023-03-30",
+    "name": "Sega Game",
+    "description": "Создание новой игры",
+    "is_deleted": false,
+    "deleted_at": null,
+    "user": [
+      3,
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 5,
+  "fields": {
+    "started_at": "2023-03-06",
+    "finished_at": "2023-04-20",
+    "name": "Банк Развития",
+    "description": "Создание сайта для банка Развития",
+    "is_deleted": false,
+    "deleted_at": null,
+    "user": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 6,
+  "fields": {
+    "started_at": "2023-03-20",
+    "finished_at": "2023-03-22",
+    "name": "Dfd",
+    "description": "Dhkjk",
+    "is_deleted": true,
+    "deleted_at": "2023-03-21T09:01:30.751Z",
+    "user": [
+      3
+    ]
+  }
+}
+]
