@@ -14,15 +14,27 @@
                     <div>
                         <h4><b>{{ issue.summary }}</b></h4>
                         <p><b>Статус: </b> {{ issue.status }} </p>
-                        <p><a href="{% url 'issue_detail' issue.pk %}">Подробнее</a></p>
+                        <p><a href="{% url 'issue_detail' issue.pk %}">Подробнее API</a></p>
+                        <p><a href="{% url 'issue_details' issue.pk %}">Подробнее</a></p>
                     </div>
                     <div class="row margin-buttons">
-                        <div class="col-3">
-                            <a href="{% url 'issue_delete' issue.pk %}" class='btn btn-danger'>Удалить</a>
-                        </div>
-                        <div class="col-3">
-                            <a href="{% url 'issue_update' issue.pk %}" class='btn btn-primary'>Изменить</a>
-                        </div>
+                          <div class="col-3">
+                        <a class="btn btn-primary edit-button" style="width: 150px; " href="{% url 'issue_update' issue.pk %}"
+                           role="button">Edit using API</a>
+                    </div>
+                    <div class="col-3">
+                        <a class="btn btn-danger" style="width: 150px; margin-left: 30px" href="{% url 'issue_delete' issue.pk %}"
+                           role="button">Delete using API</a>
+                    </div>
+
+                    <div class="col-3">
+                        <a class="btn btn-primary edit-button" style="margin-left: 50px;" href="{% url 'issue_upd' issue.pk %}"
+                           role="button">Edit</a>
+                    </div>
+                    <div class="col-3">
+                        <a class="btn btn-danger" style="margin-left: -10px;" href="{% url 'issue_del' issue.pk %}"
+                           role="button">Delete</a>
+                    </div>
                     </div>
                 </div>
              {% empty %}

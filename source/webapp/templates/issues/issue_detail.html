@@ -23,11 +23,20 @@
                 <p><b>Дата обноовления: </b> {{ issue.updated_at }} </p>
                 <div class="row margin-buttons">
                     <div class="col-3">
-                        <a class="btn btn-primary edit-button" href="{% url 'issue_update' issue.pk %}"
+                        <a class="btn btn-primary edit-button" style="width: 150px; " href="{% url 'issue_update' issue.pk %}"
+                           role="button">Edit using API</a>
+                    </div>
+                    <div class="col-3">
+                        <a class="btn btn-danger" style="width: 150px; margin-left: 20px" href="{% url 'issue_delete' issue.pk %}"
+                           role="button">Delete using API</a>
+                    </div>
+
+                    <div class="col-3">
+                        <a class="btn btn-primary edit-button" style="margin-left: 30px;" href="{% url 'issue_upd' issue.pk %}"
                            role="button">Edit</a>
                     </div>
                     <div class="col-3">
-                        <a class="btn btn-danger" href="{% url 'issue_delete' issue.pk %}"
+                        <a class="btn btn-danger" style="margin-left: -40px;" href="{% url 'issue_del' issue.pk %}"
                            role="button">Delete</a>
                     </div>
                 </div>
